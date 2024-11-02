@@ -75,3 +75,63 @@ Now you're ready to start using your IAM user! 🏁
 - Log in using your IAM user's username and password from the .csv file.
 
 🙏 **PLEASE make sure you log in to your IAM Admin User instead of the root user - it's truly best practice for account security.**
+
+☁️ **Step #2**  
+**Launch an EC2 Instance**  
+
+Before we get into the juicy work of building your web app, we need to set up a home for your web app's files.  
+
+Since we want your web app to be entirely created and run on the cloud, we'll use a virtual server (EC2 instance) to house our development work.  
+
+Let's get an EC2 instance up and running!  
+
+In this step, you're going to:  
+- Launch a new EC2 instance.  
+- Set up a key pair for secure access.  
+- Set up network settings for your instance.  
+
+![What you're building in this step.](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.0-framed.png)  
+<div align="center">What you're building in this step.</div>
+
+Head to Amazon EC2 in your AWS Management Console.  
+
+![Head to EC2](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.1.png)  
+<div align="center">Head to EC2</div>
+
+Switch your Region to the one closest to you.  
+<div align="center">Switch your region to one closest to you.</div>
+
+In your EC2 console, select Instances from the left hand navigation panel.. Choose Launch instances.  
+
+![Select Launch instances.](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.3.png)  
+<div align="center">Select Launch instances.</div>
+
+Let's set up your EC2 instance.. In Name, enter the value `nextwork-devops-yourname`.. Don't forget to replace yourname with your name!. Choose Amazon Linux 2023 AMI under Amazon Machine Image (AMI).  
+
+![Select Amazon Linux 2023 AMI](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.4.png)  
+<div align="center">Select Amazon Linux 2023 AMI</div>
+
+Leave t2.micro under Instance type.. Under Key pair (login), choose Create a new key pair.  
+
+![Create a new key pair.](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.5.png)  
+<div align="center">Create a new key pair.</div>
+
+Use `nextwork-keypair` as your key pair's name.. Keep the Key pair type as RSA, and the Private key file format as .pem.  
+Select Create key pair.  
+
+![Set up your new key pair.](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.6.png)  
+<div align="center">Set up your new key pair.</div>
+
+A new file will automatically download to your local computer - nice! This is your private key.. Before we lose track of our .pem file, let's organise it in our computer.. Head to your local computer's desktop.. Create a new folder in your desktop called `DevOps`.  
+Move your .pem file from your Downloads folder into your DevOps folder.  
+
+Back to our EC2 instance setup, head to the Network settings section.. For Allow SSH traffic from, select the dropdown and choose My IP. This makes sure only you can access your EC2 instance.. Double-check that the IP address under My IP is correct - you can check your IP by clicking [here](https://www.whatismyip.com/). If your IP address is different from what's under My IP, select Custom from the dropdown instead. Enter your IP and make sure to add a /32 to the end e.g. `012.345.678.9/32`.  
+Leave the default values for the remaining sections.  
+
+![Your EC2 instance's Networking settings.](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.9.png)  
+<div align="center">Your EC2 instance's Networking settings.</div>
+
+When you're ready, choose Launch instance.. Success 😎  
+
+![Success!](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.11.png)  
+<div align="center">Success!</div>
