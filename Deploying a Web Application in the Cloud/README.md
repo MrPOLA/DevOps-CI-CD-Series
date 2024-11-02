@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/51e021b4-a3d6-44b3-bd0f-206dcc9f95a8)# Deploying a Web Application in the Cloud
+# Deploying a Web Application in the Cloud
 
 ## Kick off your DevOps CI/CD series with this foundational project!
 
