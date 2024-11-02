@@ -38,6 +38,7 @@ Get ready to:
 ## Your Step-By-Step Guide
 
 <p align="center">💂‍♀️ Step #1</p> 
+
 **Set up an IAM user**  
 
 Before we dive in, log in to your AWS account with your IAM user.  
