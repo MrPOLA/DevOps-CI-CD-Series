@@ -19,4 +19,4 @@ Welcome to your DevOps x AWS project series! In this **SEVEN-project series**, y
 
 Here's what you'll build at the end of ALL seven projects ⬇️
 
-<img src="https://learn.nextwork.org/projects/static/aws-devops-vscode/architecture-complete.png" alt="Workflow" style="border-radius: 15px; max-width: 100%; height: auto;">
+![Workflow](https://learn.nextwork.org/projects/static/aws-devops-vscode/architecture-complete.png)
