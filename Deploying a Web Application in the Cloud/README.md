@@ -178,7 +178,7 @@ In this step, you're going to:
 
 <p align="center">⬇️ Step #3</p>
 
-Install VSCode  
+**Install VSCode**
 
 Now that your EC2 instance is up and running, how are we going to get inside your instance and set up a web app?  
 
