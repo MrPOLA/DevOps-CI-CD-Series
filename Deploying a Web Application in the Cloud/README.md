@@ -13,6 +13,8 @@
 ⚡️ **30 Second Summary**: Welcome to your DevOps x AWS project series! In this SEVEN-project series, you will create a CI/CD pipeline to build and deploy a simple web application using AWS' Code services. Here's what you'll build at the end of ALL seven projects ⬇️.
 
 ![Workflow](https://learn.nextwork.org/projects/static/aws-devops-vscode/architecture-complete.png "Workflow showing the CI/CD pipeline architecture involving AWS services")
+<div align="center">Yup, you'll build all of this from scratch, and we'll do every step together.</div>
+
 
 🧠 **What's CI/CD? Why do this project?** Engineers are often working in big teams and collaborating on complex software projects. Managing the many, MANY changes in a project can get messy without the right processes in place. A CI/CD (Continuous Integration and Continuous Deployment/Delivery) pipeline is a key tool to automate the steps from development (i.e., created by developers) to deployment (i.e., published to users), which helps software get built and released even faster. 
 
@@ -31,7 +33,7 @@ If you would like guidance on any particular project stage, such as setting up C
 Before we dive in, log in to your AWS account with your IAM user. 
 
 ![What you're building in this step.](https://learn.nextwork.org/projects/static/aws-devops-vscode/1.0-framed.png)  
-<div align="center">*What you're building in this step.*</div>
+<div align="center">What you're building in this step.</div>
 
 #### Log In with your IAM Admin User
 - If you've logged in successfully as your IAM User, skip to the next step.
@@ -51,13 +53,13 @@ You should create IAM users instead. If a root user is a master key to your AWS 
 6. Make sure to select the checkbox next to **Provide user access to the AWS Management Console - optional**. If prompted with a pop-up panel that says **Are you providing access to a person?**, choose **I want to create an IAM user**.
 
    ![If this panel pops up, select 'I want to create an IAM user'](https://learn.nextwork.org/projects/static/aws-security-iam/high-step4.4.png)  
-   <div align="center">*If this panel pops up, select 'I want to create an IAM user'.*</div>
+   <div align="center">If this panel pops up, select 'I want to create an IAM user'.</div>
 
 7. For the console password, choose **Custom password**. Type in a password that you will remember.
 8. Deselect the checkbox for **Users must create a new password at next sign-in - Recommended**.
 
    ![Creating your user.](https://learn.nextwork.org/projects/static/aws-security-iam/high-step4.3.png)  
-   <div align="center">*Creating your user.*</div>
+   <div align="center">Creating your user.</div>
 
 9. Choose **Next**. 
 10. In the permissions setup page, choose **Attach policies directly**. From the list of Permissions policies, select **AdministratorAccess**.
