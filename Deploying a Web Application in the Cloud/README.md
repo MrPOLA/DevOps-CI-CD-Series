@@ -53,6 +53,7 @@ Before we dive in, log in to your AWS account with your IAM user.
 If you don't have an IAM user yet - here are the steps to create one (this takes less than 10 mins).  
 
 💡 **What is an IAM user? Why are we setting one up?**  
+
 In AWS, a user is a person or a computer that can do things on the AWS cloud. When you create an AWS account for the first time, the login you get is called the root user of the AWS account. AWS actually recommends to not use your root user for everyday tasks to protect it from security breaches. You should create IAM users instead. If a root user is a master key to your AWS account, think of IAM users as key copies. IAM users have separate usernames and passwords to your root user, and you can set them to have limited access to your account's resources.
 
 Here’s how to create an IAM user:  
@@ -81,12 +82,14 @@ Here’s how to create an IAM user:
 - Choose Download .csv file. Copy the Console sign-in URL. Now you're ready to start using your IAM user. 🏁
 - Log out of your root user's AWS Account.
 - Paste and go to your copied console sign-in URL.
-- Open your downloaded .csv file containing your user's access instructions.  
+- Open your downloaded .csv file containing your user's access instructions.
+
 🙏 **PLEASE make sure you log in to your IAM Admin User instead of the root user - it's truly best practice for account security.**
 
 ---
 
-☁️ **Step #2**  
+<p align="center">☁️ Step #2</p>
+
 **Launch an EC2 Instance**  
 
 Before we get into the juicy work of building your web app, we need to set up a home for your web app's files. Since we want your web app to be entirely created and run on the cloud, we'll use a virtual server (EC2 instance) to house our development work.  
