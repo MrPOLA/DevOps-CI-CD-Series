@@ -175,3 +175,40 @@ In this step, you're going to:
 
 ![Success!](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.11.png)  
 <p align="center">Success!</p>  
+
+<p align="center">⬇️ Step #3</p>
+
+Install VSCode  
+
+Now that your EC2 instance is up and running, how are we going to get inside your instance and set up a web app?  
+
+We'll use Visual Studio Code (VSCode) to connect with your instance, so you can create and edit your web app's code.  
+
+First things first, let's install VSCode.  
+
+In this step, you're going to:  
+
+- Download VSCode to your computer.  
+- Set up a terminal in VSCode, so you can communicate with your EC2 instance.  
+- Update your key pair's permission settings, so you can use it to log into your EC2 instance later.  
+
+![What you're building in this step.](https://learn.nextwork.org/projects/static/aws-devops-vscode/3.0-framed.png) 
+<p align="center">What you're building in this step.</p> 
+
+- Head to the Visual Studio Code website.  
+- Install VSCode by following the installation instructions for your OS e.g. Linux, Mac, Windows.  
+- Once downloaded, you might need to unzip a zip file to access VSCode.  
+- Open VSCode on your local computer (you'll find it in your Downloads folder).  
+- If a popup asks you to confirm opening VSCode, select Open.  
+- Welcome to VSCode!  
+
+![Welcome to VSCode.](https://learn.nextwork.org/projects/static/aws-devops-vscode/3.4.png)  
+<p align="center">Welcome to VSCode.</p> 
+
+- 🎨 If you'd like, you can customize VSCode's color theme by selecting the Gear icon on the bottom left corner, selecting Settings, and then finding the Color Theme setting under Workbench > Appearance.  
+- Select Terminal from the top menu bar.  
+- Select New Terminal from the dropdown.  
+- Navigate your terminal to the DevOps folder. You'll do this by entering this command in the terminal:  
+
+```bash
+cd ~/Desktop/DevOps
