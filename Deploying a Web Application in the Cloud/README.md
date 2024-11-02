@@ -30,7 +30,8 @@ If you would like guidance on any particular project stage, such as setting up C
 
 Before we dive in, log in to your AWS account with your IAM user. 
 
-![What you're building in this step.](https://learn.nextwork.org/projects/static/aws-devops-vscode/1.0-framed.png)
+![What you're building in this step.](https://learn.nextwork.org/projects/static/aws-devops-vscode/1.0-framed.png)  
+*What you're building in this step.*
 
 #### Log In with your IAM Admin User
 - If you've logged in successfully as your IAM User, skip to the next step.
@@ -49,12 +50,14 @@ You should create IAM users instead. If a root user is a master key to your AWS 
 5. For the User name, use `Yourname-IAM-Admin`.
 6. Make sure to select the checkbox next to **Provide user access to the AWS Management Console - optional**. If prompted with a pop-up panel that says **Are you providing access to a person?**, choose **I want to create an IAM user**.
 
-   ![If this panel pops up, select 'I want to create an IAM user'](https://learn.nextwork.org/projects/static/aws-security-iam/high-step4.4.png)
+   ![If this panel pops up, select 'I want to create an IAM user'](https://learn.nextwork.org/projects/static/aws-security-iam/high-step4.4.png)  
+   *If this panel pops up, select 'I want to create an IAM user'.*
 
 7. For the console password, choose **Custom password**. Type in a password that you will remember.
 8. Deselect the checkbox for **Users must create a new password at next sign-in - Recommended**.
 
-   ![Creating your user.](https://learn.nextwork.org/projects/static/aws-security-iam/high-step4.3.png)
+   ![Creating your user.](https://learn.nextwork.org/projects/static/aws-security-iam/high-step4.3.png)  
+   *Creating your user.*
 
 9. Choose **Next**. 
 10. In the permissions setup page, choose **Attach policies directly**. From the list of Permissions policies, select **AdministratorAccess**.
