@@ -12,8 +12,7 @@
 
 ⚡️ **30 Second Summary**: Welcome to your DevOps x AWS project series! In this SEVEN-project series, you will create a CI/CD pipeline to build and deploy a simple web application using AWS' Code services. Here's what you'll build at the end of ALL seven projects ⬇️.
 
-![Workflow](https://learn.nextwork.org/projects/static/aws-devops-vscode/architecture-complete.png "Workflow showing the CI/CD pipeline architecture involving AWS services")  
-<div align="center">Yup, you'll build all of this from scratch, and we'll do every step together.</div>
+![Workflow](https://learn.nextwork.org/projects/static/aws-devops-vscode/architecture-complete.png "Workflow showing the CI/CD pipeline architecture involving AWS services")  <div align="center">Yup, you'll build all of this from scratch, and we'll do every step together.</div>
 
 
 🧠 **What's CI/CD? Why do this project?** Engineers are often working in big teams and collaborating on complex software projects. Managing the many, MANY changes in a project can get messy without the right processes in place. A CI/CD (Continuous Integration and Continuous Deployment/Delivery) pipeline is a key tool to automate the steps from development (i.e., created by developers) to deployment (i.e., published to users), which helps software get built and released even faster. 
