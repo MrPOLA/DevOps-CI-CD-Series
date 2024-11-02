@@ -133,5 +133,4 @@ Leave the default values for the remaining sections.
 
 When you're ready, choose Launch instance.. Success 😎  
 
-![Success!](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.11.png)  
-<div align="center">Success!</div>
+![Success!](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.11.png)  <div align="center">Success!</div>
