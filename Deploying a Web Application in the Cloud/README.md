@@ -51,5 +51,23 @@ You should create IAM users instead. If a root user is a master key to your AWS 
 
    ![If this panel pops up, select 'I want to create an IAM user'](https://learn.nextwork.org/projects/static/aws-security-iam/high-step4.4.png)
 
-7. For the console password, choose **Custom password**. Type in a password that you will remem
+7. For the console password, choose **Custom password**. Type in a password that you will remember.
+8. Deselect the checkbox for **Users must create a new password at next sign-in - Recommended**.
 
+   ![Creating your user.](https://learn.nextwork.org/projects/static/aws-security-iam/high-step4.3.png)
+
+9. Choose **Next**. 
+10. In the permissions setup page, choose **Attach policies directly**. From the list of Permissions policies, select **AdministratorAccess**.
+11. Choose **Next**.
+12. Choose **Create user**. Voilà - you've just created your new user! Stay on this page.
+13. Choose **Download .csv file**. 
+14. Copy the Console sign-in URL.
+
+Now you're ready to start using your IAM user! 🏁
+
+- Log out of your root user's AWS Account.
+- Paste and go to your copied console sign-in URL.
+- Open your downloaded .csv file containing your user's access instructions.
+- Log in using your IAM user's username and password from the .csv file.
+
+🙏 **PLEASE make sure you log in to your IAM Admin User instead of the root user - it's truly best practice for account security.**
