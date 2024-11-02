@@ -40,7 +40,9 @@ Before we dive in, log in to your AWS account with your IAM user.
 
 &nbsp;
 
-Log In with your IAM Admin User. If you've logged in successfully as your IAM User, skip to the next step. If you don't have an IAM user yet - here are the steps to create one (this takes less than 10 mins).  
+- Log In with your IAM Admin User.
+- If you've logged in successfully as your IAM User, skip to the next step.
+If you don't have an IAM user yet - here are the steps to create one (this takes less than 10 mins).  
 
 💡 **What is an IAM user? Why are we setting one up?**  
 In AWS, a user is a person or a computer that can do things on the AWS cloud. When you create an AWS account for the first time, the login you get is called the root user of the AWS account. AWS actually recommends to not use your root user for everyday tasks to protect it from security breaches. You should create IAM users instead. If a root user is a master key to your AWS account, think of IAM users as key copies. IAM users have separate usernames and passwords to your root user, and you can set them to have limited access to your account's resources.
@@ -68,11 +70,10 @@ Here’s how to create an IAM user:
 - Choose Next. In the permissions setup page, choose Attach policies directly.  
 - From the list of Permissions policies, select AdministratorAccess.  
 - Choose Next. Choose Create user. Voilà - you've just created your new user! Stay on this page.  
-- Choose Download .csv file. Copy the Console sign-in URL. Now you're ready to start using your IAM user. 🏁  
-
-Log out of your root user's AWS Account.  
-Paste and go to your copied console sign-in URL.  
-Open your downloaded .csv file containing your user's access instructions.  
+- Choose Download .csv file. Copy the Console sign-in URL. Now you're ready to start using your IAM user. 🏁
+- Log out of your root user's AWS Account.
+- Paste and go to your copied console sign-in URL.
+- Open your downloaded .csv file containing your user's access instructions.  
 🙏 **PLEASE make sure you log in to your IAM Admin User instead of the root user - it's truly best practice for account security.**
 
 ---
@@ -94,7 +95,7 @@ In this step, you're going to:
 
 &nbsp;
 
-Head to Amazon EC2 in your AWS Management Console.  
+- Head to Amazon EC2 in your AWS Management Console.  
 
 ![Head to EC2](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.1.png)  
 <p align="center">Head to EC2</p>  
@@ -106,44 +107,58 @@ Switch your Region to the one closest to you.
 
 &nbsp;
 
-In your EC2 console, select Instances from the left-hand navigation panel. Choose Launch instances.  
+- In your EC2 console, select Instances from the left-hand navigation panel. Choose Launch instances.  
 
 ![Select Launch instances.](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.3.png)  
 <p align="center">Select Launch instances.</p>  
 
 &nbsp;
 
-Let's set up your EC2 instance. In Name, enter the value `nextwork-devops-yourname`. Don't forget to replace yourname with your name! Choose Amazon Linux 2023 AMI under Amazon Machine Image (AMI).  
+- Let's set up your EC2 instance.
+- In Name, enter the value `nextwork-devops-yourname`.
+  -  Don't forget to replace yourname with your name!
+- Choose Amazon Linux 2023 AMI under Amazon Machine Image (AMI).  
 
 ![Select Amazon Linux 2023 AMI](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.4.png)  
 <p align="center">Select Amazon Linux 2023 AMI</p>  
 
 &nbsp;
 
-Leave t2.micro under Instance type. Under Key pair (login), choose Create a new key pair.  
+- Leave t2.micro under Instance type.
+- Under Key pair (login), choose Create a new key pair.  
 
 ![Create a new key pair.](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.5.png)  
 <p align="center">Create a new key pair.</p>  
 
 &nbsp;
 
-Use `nextwork-keypair` as your key pair's name. Keep the Key pair type as RSA, and the Private key file format as .pem. Select Create key pair.  
+- Use `nextwork-keypair` as your key pair's name.
+- Keep the Key pair type as RSA, and the Private key file format as .pem.
+- Select Create key pair.  
 
 ![Set up your new key pair.](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.6.png)  
 <p align="center">Set up your new key pair.</p>  
 
 &nbsp;
 
-A new file will automatically download to your local computer - nice! This is your private key. Before we lose track of our .pem file, let's organize it on our computer. Head to your local computer's desktop. Create a new folder on your desktop called `DevOps`. Move your .pem file from your Downloads folder into your DevOps folder.  
-
-Back to our EC2 instance setup, head to the Network settings section. For Allow SSH traffic from, select the dropdown and choose My IP. This ensures that only you can access your EC2 instance. Double-check that the IP address under My IP is correct - you can check your IP by clicking here. If your IP address is different from what's under My IP, select Custom from the dropdown instead. Enter your IP and make sure to add a /32 to the end e.g. `012.345.678.9/32`. Leave the default values for the remaining sections.  
+- A new file will automatically download to your local computer - nice! This is your private key.
+- Before we lose track of our .pem file, let's organize it on our computer.
+- Head to your local computer's desktop.
+- Create a new folder on your desktop called `DevOps`.
+- Move your .pem file from your Downloads folder into your DevOps folder.
+- Back to our EC2 instance setup, head to the Network settings section.
+- For Allow SSH traffic from, select the dropdown and choose My IP. This ensures that only you can access your EC2 instance.
+- Double-check that the IP address under My IP is correct - you can check your IP by clicking here.
+- If your IP address is different from what's under My IP, select Custom from the dropdown instead. Enter your IP and make sure to add a /32 to the end e.g. `012.345.678.9/32`.
+- Leave the default values for the remaining sections.  
 
 ![Your EC2 instance's Networking settings.](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.9.png)  
 <p align="center">Your EC2 instance's Networking settings.</p>  
 
 &nbsp;
 
-When you're ready, choose Launch instance. Success 😎  
+- When you're ready, choose Launch instance.
+- Success 😎  
 
 ![Success!](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.11.png)  
 <p align="center">Success!</p>  
