@@ -114,6 +114,7 @@ In this step, you're going to:
 &nbsp;
 
 - Switch your Region to the one closest to you.
+
 ![Switch your region to one closest to you](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.2.png) 
 <p align="center">Switch your region to one closest to you.</p>  
 
