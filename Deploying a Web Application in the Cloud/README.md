@@ -222,9 +222,18 @@ ls
 - Change the permissions of your .pem file. In the terminal, run the following command to allow access to your .pem file.
 
 **For Mac and Linux users:**
+
 ```bash
 chmod 400 nextwork-keypair.pem
 ```
 
 **For Windows users:**
 
+```bash
+icacls "nextwork-keypair.pem" /reset
+icacls "nextwork-keypair.pem" /grant:r "%USERNAME%:R"
+icacls "nextwork-keypair.pem" /inheritance:r
+```
+
+- Make sure to replace "%USERNAME%:R" with your Windows username. If you don't know your username, run whoami in your terminal to find out.
+- Make sure to double-check that the file name in your command (i.e., nextwork-keypair.pem) matches the file in your DevOps folder.
