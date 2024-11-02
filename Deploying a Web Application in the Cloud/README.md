@@ -1,8 +1,17 @@
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/cdea8761-a9da-4ded-b337-b0b41af9c1e3" width="20"> <strong>DIFFICULTY</strong> Easy-ish</td>
-    <td><img src="https://learn.nextwork.org/static/hourglass.svg" width="20"> <strong>TIME</strong> 120 mins</td>
-    <td><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWRvbGxhci1zaWduIj48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjIiIHkyPSIyMiIvPjxwYXRoIGQ9Ik0xNyA1SDkuNWEzLjUgMy41IDAgMCAwIDAgN2g1YTMuNSAzLjUgMCAwIDEgMCA3SDYiLz48L3N2Zz4=" width="20"> <strong>COST</strong> $0</td>
+    <td style="vertical-align: middle; padding: 10px;">
+      <img src="https://github.com/user-attachments/assets/cdea8761-a9da-4ded-b337-b0b41af9c1e3" width="20" style="vertical-align: middle;"> 
+      <strong>DIFFICULTY</strong> Easy-ish
+    </td>
+    <td style="vertical-align: middle; padding: 10px;">
+      <img src="https://learn.nextwork.org/static/hourglass.svg" width="20" style="vertical-align: middle;"> 
+      <strong>TIME</strong> 120 mins
+    </td>
+    <td style="vertical-align: middle; padding: 10px;">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWRvbGxhci1zaWduIj48bGluZSB4MT0iMTIiIHgyPSIxMiIgeTE9IjIiIHkyPSIyMiIvPjxwYXRoIGQ9Ik0xNyA1SDkuNWEzLjUgMy41IDAgMCAwIDAgN2g1YTMuNSAzLjUgMCAwIDEgMCA3SDYiLz48L3N2Zz4=" width="20" style="vertical-align: middle;"> 
+      <strong>COST</strong> $0
+    </td>
   </tr>
 </table>
 
