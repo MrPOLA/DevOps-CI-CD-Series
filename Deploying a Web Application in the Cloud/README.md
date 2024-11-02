@@ -1,4 +1,4 @@
-# Deploying a Web Application in the Cloud
+![image](https://github.com/user-attachments/assets/51e021b4-a3d6-44b3-bd0f-206dcc9f95a8)# Deploying a Web Application in the Cloud
 
 ## Kick off your DevOps CI/CD series with this foundational project!
 
@@ -113,7 +113,8 @@ In this step, you're going to:
 
 &nbsp;
 
-Switch your Region to the one closest to you.  
+- Switch your Region to the one closest to you.
+![Switch your region to one closest to you](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.2.png) 
 <p align="center">Switch your region to one closest to you.</p>  
 
 &nbsp;
