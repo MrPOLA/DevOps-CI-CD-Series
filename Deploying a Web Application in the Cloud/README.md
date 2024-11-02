@@ -11,7 +11,7 @@
     1. Amazon EC2  
     2. VSCode  
 
-##⚡️ 30 second Summary.
+⚡️ **30 second Summary.**
 Welcome to your DevOps x AWS project series! 
 
 In this SEVEN-project series, you will create a CI/CD pipeline to build and deploy a simple web application using AWS' Code services. 
