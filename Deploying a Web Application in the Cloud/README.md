@@ -212,3 +212,19 @@ In this step, you're going to:
 
 ```bash
 cd ~/Desktop/DevOps
+```
+
+- Once you’re in the DevOps folder, you might want to check if your .pem file is there. Use this command:
+```bash
+ls
+```
+
+- Change the permissions of your .pem file. In the terminal, run the following command to allow access to your .pem file.
+
+**For Mac and Linux users:**
+```bash
+chmod 400 nextwork-keypair.pem
+```
+
+**For Windows users:**
+
