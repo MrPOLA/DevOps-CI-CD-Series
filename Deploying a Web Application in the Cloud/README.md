@@ -1,9 +1,4 @@
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD6wH48_kjC3jNGXG48ngVqV7bWZ7BSlEgmA&s" alt="Cloud Icon" style="width: 24px; height: 24px; vertical-align: middle; margin-right: 8px;"/>
-<div style="text-align: center;">
-    <h1>Deploying a Web Application in the Cloud</h1>
-</div>
-
-
+# Deploying a Web Application in the Cloud
 
 ## Kick off your DevOps CI/CD series with this foundational project!
 
