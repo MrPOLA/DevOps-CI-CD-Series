@@ -411,13 +411,16 @@ In this step, you're going to:
 
 ![caption-You'll use VSCode to edit a file called index.jsp.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.0-framed.png)
 
-- Clicking on the Extensions icon at the side of your VSCode window.  
+- Clicking on the Extensions icon at the side of your VSCode window.
+
 ![caption- Extensions icon.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.1.png)
 
-- In the search bar, type Remote - SSH and click Install for the extension.  
+- In the search bar, type Remote - SSH and click Install for the extension.
+
 ![caption-Install your extension.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.2.png)
 
-- Click on the double arrow icon at the bottom left corner of your VSCode window. This button is a shortcut to use Remote - SSH..  
+- Click on the double arrow icon at the bottom left corner of your VSCode window. This button is a shortcut to use Remote - SSH..
+  
 ![caption-Find this double arrow button at the bottom left corner.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.3.png)
 
 - Select Remote-SSH: Connect to Host.... 
