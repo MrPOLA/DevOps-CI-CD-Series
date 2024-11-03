@@ -244,7 +244,8 @@ Nice work! Now that your .pem file is secure, let's connect to your EC2 instance
 ---
 
 <p align="center">🔌 Step #4</p>
-Connect to Your EC2 Instance
+
+**Connect to Your EC2 Instance**
 
 Your EC2 instance is working, and you've just set up VSCode. You have all the ingredients you need to set up a 🔌 connection 🔌 to your EC2 instance. Once connected, we can work inside your EC2 instance to set up that web app.
 
