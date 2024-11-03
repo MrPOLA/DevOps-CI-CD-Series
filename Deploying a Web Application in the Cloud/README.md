@@ -256,14 +256,14 @@ In this step, you're going to:
 <p align="center">What you're building in this step</p>
 
 1. Head back to your AWS Management Console.
-   - Click on **Instances** from the left-hand navigation panel.
-   - Click on the checkbox next to your EC2 instance to view its details.
-   - Under the **Details** tab, look for **Public IPv4 DNS**.
+- Click on **Instances** from the left-hand navigation panel.
+-  Click on the checkbox next to your EC2 instance to view its details.
+-  Under the **Details** tab, look for **Public IPv4 DNS**.
 
    ![Find your EC2 instance's IPv4 address](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.1.png)  
    <p align="center">Find your EC2 instance's IPv4 address</p>
 
-   💡 **What is a Public IPv4 DNS?**  
+💡 **What is a Public IPv4 DNS?**  
    A Public IPv4 DNS (Domain Name System) is the public address for your EC2 server that the internet uses to find and connect to it. The local computer you're using to do this project will connect to your EC2 instance through this IPv4 DNS.
 
 2. Connect to your instance via SSH.
@@ -274,8 +274,8 @@ In this step, you're going to:
    ```bash
    ssh -i [PATH TO YOUR .PEM FILE] ec2-user@[YOUR PUBLIC IPV4 DNS]
    ```
-   - Replace [PATH TO YOUR .PEM FILE] with the actual path to your private key file (e.g., ~/Desktop/DevOps/nextwork-keypair.pem). Delete the square brackets.
-   - Replace [YOUR PUBLIC IPV4 DNS] with the Public DNS you just found. Delete the square brackets.
+- Replace [PATH TO YOUR .PEM FILE] with the actual path to your private key file (e.g., ~/Desktop/DevOps/nextwork-keypair.pem). Delete the square brackets.
+- Replace [YOUR PUBLIC IPV4 DNS] with the Public DNS you just found. Delete the square brackets.
 
 💡 What does this command do?
 
