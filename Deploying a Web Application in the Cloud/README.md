@@ -392,6 +392,7 @@ mvn archetype:generate \
 - Watch out for a BUILD SUCCESS message in your terminal once your application is all set up.
 
 ![caption-Build success.](https://learn.nextwork.org/projects/static/aws-devops-vscode/6.1.png)
+<p align="center">Build success.</p>
 
 ---
 
@@ -410,23 +411,28 @@ In this step, you're going to:
 3. Explore and edit your Java web app's files using VSCode.
 
 ![caption-You'll use VSCode to edit a file called index.jsp.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.0-framed.png)
+<p align="center">You'll use VSCode to edit a file called index.jsp.</p>
 
 - Clicking on the Extensions icon at the side of your VSCode window.
 
 ![caption- Extensions icon.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.1.png)
+<p align="center">Extensions icon.</p>
 
 - In the search bar, type Remote - SSH and click Install for the extension.
 
 ![caption-Install your extension.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.2.png)
+<p align="center">Install your extension.</p>
 
 - Click on the double arrow icon at the bottom left corner of your VSCode window. This button is a shortcut to use Remote - SSH..
   
 ![caption-Find this double arrow button at the bottom left corner.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.3.png)
+<p align="center">Find this double arrow button at the bottom left corner.</p>
 
 - Select Remote-SSH: Connect to Host.... 
 - Select + Add New SSH Host...
   
 ![caption-Add new SSH Host.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.4.png)
+<p align="center">Add new SSH Host.</p>
 
 - Enter the SSH command you used to connect to your EC2 instance:
   
@@ -440,6 +446,7 @@ ssh -i [PATH TO YOUR .PEM FILE] ec2-user@[YOUR PUBLIC IPV4 DNS]
 - Select the configuration file at the top of your window. It should look similar to `/Users/username/.ssh/config`.
   
 ![caption-Select your configuration file.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.5.png)
+<p align="center">Select your configuration file.</p>
 
 - A Host added! popup will confirm that you've set up your SSH Host - yay!  
 - Select the blue Open Config button on that popup.  
@@ -449,23 +456,27 @@ ssh -i [PATH TO YOUR .PEM FILE] ec2-user@[YOUR PUBLIC IPV4 DNS]
   - User should say `ec2-user`.
 
 ![caption - Check your configuration file.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.6.png)
+<p align="center">Check your configuration file.</p>
 
 - Now you’re ready to connect VSCode with your EC2 instance!  
 - Click on the double arrow button on the bottom left corner and select Connect to Host again.  
 - You should now see your EC2 instance listed at the top.
   
 ![caption-Your EC2 instance.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.7.png)
+<p align="center">Your EC2 instance.</p>
 
 - Select the EC2 instance and off we gooooooooooo to a new VSCode window ✈️.  
 - Check the bottom right-hand corner of your new VSCode window - it should show your EC2 instance's IPV4 DNS.
   
 ![caption-Check the bottom right hand corner of VSCode.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.9.png)
+<p align="center">Check the bottom right hand corner of VSCode.</p>
 
 Nice work - you've connected VSCode with your EC2 instance! 🥳 Now let's open up your web app's files.  
 
 - From VSCode's left-hand navigation bar, select the Explorer icon.
   
 ![caption-Open to Explorer icon.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.10.png)
+<p align="center">Open to Explorer icon.</p>
 
 - Select Open folder.  
 - At the top of your VSCode window, you should see a drop-down of different file and folder names. Ooooo, this is VSCode asking you which specific file/folder you'd like to open!  
@@ -475,12 +486,14 @@ Nice work - you've connected VSCode with your EC2 instance! 🥳 Now let's open 
 - Check your VSCode window's file explorer again - a folder called `nextwork-web-project` is here!
   
 ![caption-A magical web app appears!](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.13.png)
+<p align="center">A magical web app appears!</p>
 
 - Try expanding all the subfolders in the file explorer. All folders have a > icon next to their name.  
 - Exploring done! So how can VSCode help you edit your application files? Let's find out..  
 - From your file explorer, click into `index.jsp`.
   
 ![caption-index.jsp](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.15.png)
+<p align="center">index.jsp</p>
 
 - Welcome to the editor view of `index.jsp`. Now we're really using VSCode's IDE abilities - editing code is much easier here than in the terminal.  
 - Let's try modifying `index.jsp` by changing the placeholder code to the code snippet below. Don't forget to replace `<YOUR NAME>` in the following code with your name:
@@ -494,5 +507,36 @@ Nice work - you've connected VSCode with your EC2 instance! 🥳 Now let's open 
 </html>
 ```
 ![caption-Customise the index.jsp file in your new project.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.16.png)
+<p align="center">Customise the index.jsp file in your new project.</p>
 
 - Save the changes you've made to `index.jsp` by selecting Command/Ctrl + S on your keyboard.
+
+---
+
+🗑️ Step #8
+**Delete Your Resources**
+
+✋ STOP  
+Before diving into the steps for deleting your resources, why not challenge yourself to delete everything on your own?  
+Keeping track of your resources, and deleting them at the end, is a key skill that will help you avoid charges to your account.
+
+🛑 STEPS BELOW:
+
+💻 Delete your EC2 instance:  
+- In your AWS Management Console, head to Amazon EC2 to delete your EC2 instance.  
+- Select Instances from the left-hand navigation panel. Select the checkbox next to your instance.  
+- Click on the Instance state dropdown and select Terminate (delete) instance.  
+- Choose Terminate (delete).
+
+![Terminate your EC2 instance](https://learn.nextwork.org/projects/static/aws-devops-vscode/8.1.png "Terminate your EC2 instance.")  
+<p align="center">Terminate your EC2 instance.</p>  
+
+🔑 Delete your key pair:  
+**Note:** If you plan to continue this DevOps series (totally recommend!), you can keep your key pair and use the same credentials for the rest of this series. AWS does not charge for key pairs. Store your key pair in a safe place.  
+- Still in your EC2 console, select Key Pair from the left-hand navigation panel.  
+- Select the checkbox next to your key pair.  
+- Select the Actions dropdown, and then Delete.  
+- Type Delete in the text field, and select Delete.
+
+![Delete your EC2 key pair](https://learn.nextwork.org/projects/static/aws-devops-vscode/8.3.png "Delete your EC2 key pair.")  
+<p align="center">Delete your EC2 key pair.</p>  
