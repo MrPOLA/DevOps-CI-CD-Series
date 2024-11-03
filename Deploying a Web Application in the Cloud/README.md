@@ -251,7 +251,7 @@ Your EC2 instance is working, and you've just set up VSCode. You have all the in
 
 In this step, you're going to:
 - Connect to your EC2 instance.
-- 
+
 ![What you're building in this step](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.0-framed.png)  
 <p align="center">What you're building in this step</p>
 
