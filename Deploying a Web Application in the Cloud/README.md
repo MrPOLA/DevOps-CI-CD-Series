@@ -243,7 +243,7 @@ Nice work! Now that your .pem file is secure, let's connect to your EC2 instance
 
 ---
 
-<p align="center">### 🔌 Step #4</p>
+<p align="center">🔌 Step #4</p>
 Connect to Your EC2 Instance
 
 Your EC2 instance is working, and you've just set up VSCode. You have all the ingredients you need to set up a 🔌 connection 🔌 to your EC2 instance. Once connected, we can work inside your EC2 instance to set up that web app.
@@ -251,7 +251,7 @@ Your EC2 instance is working, and you've just set up VSCode. You have all the in
 In this step, you're going to:
 - Connect to your EC2 instance.
 ![What you're building in this step](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.0-framed.png)  
-<p align="center">*What you're building in this step*</p>
+<p align="center">What you're building in this step</p>
 
 1. Head back to your AWS Management Console.
    - Click on **Instances** from the left-hand navigation panel.
@@ -259,7 +259,7 @@ In this step, you're going to:
    - Under the **Details** tab, look for **Public IPv4 DNS**.
 
    ![Find your EC2 instance's IPv4 address](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.1.png)  
-   <p align="center">*Find your EC2 instance's IPv4 address*</p>
+   <p align="center">Find your EC2 instance's IPv4 address</p>
 
    💡 **What is a Public IPv4 DNS?**  
    A Public IPv4 DNS (Domain Name System) is the public address for your EC2 server that the internet uses to find and connect to it. The local computer you're using to do this project will connect to your EC2 instance through this IPv4 DNS.
@@ -296,4 +296,4 @@ If we did not change the permission settings of our private key, our EC2 instanc
 - Enter yes to continue connecting.
 - 🎉 Congrats! You've connected to your EC2 instance via SSH.
  ![Connected EC2 instance via SSH](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.3.png)
- <p align="center">*Looking good!*</p>
+ <p align="center">Looking good!</p>
