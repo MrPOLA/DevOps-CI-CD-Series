@@ -353,4 +353,17 @@ Apache Maven is a tool that helps developers build and organize Java software pr
   ![Downloading Java](https://learn.nextwork.org/projects/static/aws-devops-vscode/5.2.png)
  <p align="center">Downloading Java.</p>
 
-- 
+- To verify that Maven is installed correctly, run the following command next:
+
+   ```bash
+   mvn -v
+   ```
+
+- To verify that you've installed Java 8 correctly, run this next:
+
+  ```bash
+  java -version
+  ```
+
+  ![Running commands to verify you've installed Java](https://learn.nextwork.org/projects/static/aws-devops-vscode/5.3.png)
+  <p align="center">Running commands to verify you've installed Java.</p>
