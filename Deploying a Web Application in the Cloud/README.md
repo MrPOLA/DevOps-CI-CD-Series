@@ -496,4 +496,3 @@ Nice work - you've connected VSCode with your EC2 instance! 🥳 Now let's open 
 ![caption-Customise the index.jsp file in your new project.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.16.png)
 
 - Save the changes you've made to `index.jsp` by selecting Command/Ctrl + S on your keyboard.
-```
