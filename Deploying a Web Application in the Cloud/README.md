@@ -290,4 +290,10 @@ In cybersecurity, a fingerprint is a unique code that helps verify that the devi
 💡 Fun Fact:
 If we did not change the permission settings of our private key, our EC2 instance would refuse to connect with us!
 
-https://learn.nextwork.org/projects/static/aws-devops-vscode/4.2.png
+ ![Continue Connecting EC2 instance](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.2.png)
+
+4. Continue Connecting.
+- Enter yes to continue connecting.
+- 🎉 Congrats! You've connected to your EC2 instance via SSH.
+ ![Connected EC2 instance via SSH](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.3.png)
+ <p align="center">*Looking good!*</p>
