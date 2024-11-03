@@ -367,3 +367,120 @@ Apache Maven is a tool that helps developers build and organize Java software pr
 
   ![Running commands to verify you've installed Java](https://learn.nextwork.org/projects/static/aws-devops-vscode/5.3.png)
   <p align="center">Running commands to verify you've installed Java.</p>
+
+---
+
+<p align="center">🏗️ Step #6</p>
+
+**Create the Application**
+
+We've assembled both Maven and Java into our EC2 instance. Now let's cut straight to generating the web app!  
+
+In this step, you're going to:
+
+- Run Maven commands in your terminal to generate a Java web app. 
+- Use mvn to generate a Java web app. To do this, use these commands:
+
+```bash
+mvn archetype:generate \
+   -DgroupId=com.nextwork.app \
+   -DartifactId=nextwork-web-project \
+   -DarchetypeArtifactId=maven-archetype-webapp \
+   -DinteractiveMode=false
+```
+
+- Watch out for a BUILD SUCCESS message in your terminal once your application is all set up.
+
+![caption-Build success.](https://learn.nextwork.org/projects/static/aws-devops-vscode/6.1.png)
+
+<p align="center">🔗 Step #7</p>
+
+**Connect VSCode with your EC2 Instance**
+
+You might be thinking... have I really just set up a web app? Where is it, how can I actually see it?  
+
+In this step, you'll connect VSCode to your EC2 instance so you can see and edit the web app you've just created.  
+
+In this step, you're going to:
+
+1. Install an extension in VSCode.
+2. Use the extension to set up a connection between VSCode and your EC2 instance.
+3. Explore and edit your Java web app's files using VSCode.
+
+![caption-You'll use VSCode to edit a file called index.jsp.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.0-framed.png)
+
+- Clicking on the Extensions icon at the side of your VSCode window.  
+![caption- Extensions icon.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.1.png)
+
+- In the search bar, type Remote - SSH and click Install for the extension.  
+![caption-Install your extension.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.2.png)
+
+- Click on the double arrow icon at the bottom left corner of your VSCode window. This button is a shortcut to use Remote - SSH..  
+![caption-Find this double arrow button at the bottom left corner.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.3.png)
+
+- Select Remote-SSH: Connect to Host.... 
+- Select + Add New SSH Host...  
+![caption-Add new SSH Host.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.4.png)
+
+- Enter the SSH command you used to connect to your EC2 instance: 
+```bash
+ssh -i [PATH TO YOUR .PEM FILE] ec2-user@[YOUR PUBLIC IPV4 DNS]
+```
+- Replace `[PATH TO YOUR .PEM FILE]` with the actual path to your private key file (e.g., `~/Desktop/DevOps/nextwork-keypair.pem`). Delete the square brackets!  
+- Replace `[YOUR PUBLIC IPV4 DNS]` with the Public DNS you just found. Delete the square brackets!
+
+- Select the configuration file at the top of your window. It should look similar to `/Users/username/.ssh/config`.  
+![caption-Select your configuration file.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.5.png)
+
+- A Host added! popup will confirm that you've set up your SSH Host - yay!  
+- Select the blue Open Config button on that popup.  
+- Confirm that all the details in your configuration file look correct:  
+  - Host should match up with your EC2 instance's IPv4 DNS.  
+  - IdentityFile should match up to `nextwork-keypair.pem`'s location in your local computer.  
+  - User should say `ec2-user`.  
+![caption - Check your configuration file.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.6.png)
+
+- Now you’re ready to connect VSCode with your EC2 instance!  
+- Click on the double arrow button on the bottom left corner and select Connect to Host again.  
+- You should now see your EC2 instance listed at the top.  
+![caption-Your EC2 instance.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.7.png)
+
+- Select the EC2 instance and off we gooooooooooo to a new VSCode window ✈️.  
+- Check the bottom right-hand corner of your new VSCode window - it should show your EC2 instance's IPV4 DNS.  
+![caption-Check the bottom right hand corner of VSCode.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.9.png)
+
+Nice work - you've connected VSCode with your EC2 instance! 🥳 Now let's open up your web app's files.  
+
+- From VSCode's left-hand navigation bar, select the Explorer icon.  
+![caption-Open to Explorer icon.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.10.png)
+
+- Select Open folder.  
+- At the top of your VSCode window, you should see a drop-down of different file and folder names. Ooooo, this is VSCode asking you which specific file/folder you'd like to open!  
+- Enter `/home/ec2-user/nextwork-web-project`.  
+- Press OK.  
+- VSCode might show you a popup asking if you trust the authors of the files in this folder. If you see this popup, select Yes, I trust the authors.  
+- Check your VSCode window's file explorer again - a folder called `nextwork-web-project` is here!  
+![caption-A magical web app appears!](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.13.png)
+
+- Try expanding all the subfolders in the file explorer. All folders have a > icon next to their name.  
+- Exploring done! So how can VSCode help you edit your application files? Let's find out..  
+- From your file explorer, click into `index.jsp`.  
+![caption-index.jsp](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.15.png)
+
+- Welcome to the editor view of `index.jsp`. Now we're really using VSCode's IDE abilities - editing code is much easier here than in the terminal.  
+- Let's try modifying `index.jsp` by changing the placeholder code to the code snippet below. Don't forget to replace `<YOUR NAME>` in the following code with your name:
+
+```html
+<html>
+<body>
+<h2>Hello <YOUR NAME>!</h2>
+<p>This is my NextWork web application working!</p>
+</body>
+</html>
+```
+![caption-Customise the index.jsp file in your new project.](https://learn.nextwork.org/projects/static/aws-devops-vscode/7.16.png)
+
+- Save the changes you've made to `index.jsp` by selecting Command/Ctrl + S on your keyboard.
+```
+
+If there are any other adjustments or specific elements you'd like to include, just let me know!
