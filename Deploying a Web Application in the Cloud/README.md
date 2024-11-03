@@ -303,3 +303,54 @@ If we did not change the permission settings of our private key, our EC2 instanc
 
  ![Connected EC2 instance via SSH](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.3.png)
  <p align="center">Looking good!</p>
+
+---
+
+<p align="center">🛠️ Step #5</p>
+
+**Install Apache Maven and Amazon Corretto 8**
+
+Connection DONE 😎
+
+This means your terminal has now entered into your EC2 instance and can use it like a computer that's right in front of you!
+
+Our goal today is to set up a web app inside this instance, so let's install two tools that are going to help us build Java web apps.
+
+Introducing Apache Maven and Amazon Corretto 8 🥁
+
+**In this step, you're going to:**
+1. Install Apache Maven on your EC2 instance. 
+2. Install Amazon Corretto 8, a version of Java. 
+3. Verify the installations.
+
+💡 **What is Apache Maven?**  
+Apache Maven is a tool that helps developers build and organize Java software projects. It's also a package manager, which means it automatically downloads any external pieces of code your project depends on to work. We're also using Maven today because it's really useful for kick-starting web projects! It uses something called archetypes, which are like templates, to lay out the foundations for different types of projects, e.g., web apps. We'll use Maven later on to help us set up all the necessary web files to create a web app structure, so we can jump straight into the fun part of developing the web app sooner.
+
+- Install Apache Maven using the commands below. You can copy and paste all of these lines into the terminal together; no need to run them line by line.
+
+   ```bash
+   wget https://archive.apache.org/dist/maven/maven-3/3.5.2/binaries/apache-maven-3.5.2-bin.tar.gz
+   sudo tar -xzf apache-maven-3.5.2-bin.tar.gz -C /opt
+   echo "export PATH=/opt/apache-maven-3.5.2/bin:$PATH" >> ~/.bashrc
+   source ~/.bashrc
+   ```
+
+- Once you've pasted these commands, don't forget to press Enter on your keyboard.
+
+ ![Run the commands to install Maven.](https://learn.nextwork.org/projects/static/aws-devops-vscode/5.1.png)
+ <p align="center">Run the commands to install Maven.</p>
+
+- Maven will take 30-45 seconds to download...
+- Now we're going to install Java 8, or more specifically, Amazon Correto 8..
+- Run these commands:
+
+  ```bash
+  sudo dnf install -y java-1.8.0-amazon-corretto-devel
+  export JAVA_HOME=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64
+  export PATH=/usr/lib/jvm/java-1.8.0-amazon-corretto.x86_64/jre/bin/:$PATH
+  ```
+
+  ![Downloading Java](https://learn.nextwork.org/projects/static/aws-devops-vscode/5.2.png)
+ <p align="center">Downloading Java.</p>
+
+- 
