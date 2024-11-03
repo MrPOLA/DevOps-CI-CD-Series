@@ -235,5 +235,6 @@ icacls "nextwork-keypair.pem" /grant:r "%USERNAME%:R"
 icacls "nextwork-keypair.pem" /inheritance:r
 ```
 
-- - Make sure to replace `"%USERNAME%:R"` with your Windows username. If you don't know your username, run `whoami` in your terminal to find out.
+- Make sure to replace `"%USERNAME%:R"` with your Windows username. If you don't know your username, run `whoami` in your terminal to find out.
 - Make sure to double-check that the file name in your command (i.e., nextwork-keypair.pem) matches the file in your DevOps folder.
+Nice work! Now that your .pem file is secure, let's connect to your EC2 instance.
