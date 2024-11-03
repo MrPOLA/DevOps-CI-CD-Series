@@ -176,6 +176,8 @@ In this step, you're going to:
 ![Success!](https://learn.nextwork.org/projects/static/aws-devops-vscode/2.11.png)  
 <p align="center">Success!</p>  
 
+---
+
 <p align="center">⬇️ Step #3</p>
 
 **Install VSCode**
@@ -238,3 +240,35 @@ icacls "nextwork-keypair.pem" /inheritance:r
 - Make sure to replace `"%USERNAME%:R"` with your Windows username. If you don't know your username, run `whoami` in your terminal to find out.
 - Make sure to double-check that the file name in your command (i.e., nextwork-keypair.pem) matches the file in your DevOps folder.
 Nice work! Now that your .pem file is secure, let's connect to your EC2 instance.
+
+---
+
+### 🔌 Step #4
+Connect to Your EC2 Instance
+
+Your EC2 instance is working, and you've just set up VSCode. You have all the ingredients you need to set up a 🔌 connection 🔌 to your EC2 instance. Once connected, we can work inside your EC2 instance to set up that web app.
+
+In this step, you're going to:
+- Connect to your EC2 instance.
+![What you're building in this step](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.0-framed.png)  
+*What you're building in this step*
+
+1. Head back to your AWS Management Console.
+   - Click on **Instances** from the left-hand navigation panel.
+   - Click on the checkbox next to your EC2 instance to view its details.
+   - Under the **Details** tab, look for **Public IPv4 DNS**.
+
+   ![Find your EC2 instance's IPv4 address](https://learn.nextwork.org/projects/static/aws-devops-vscode/4.1.png)  
+   *Find your EC2 instance's IPv4 address*
+
+   💡 **What is a Public IPv4 DNS?**  
+   A Public IPv4 DNS (Domain Name System) is the public address for your EC2 server that the internet uses to find and connect to it. The local computer you're using to do this project will connect to your EC2 instance through this IPv4 DNS.
+
+2. Connect to your instance via SSH.
+   - Go back to VSCode and open your terminal again.
+
+   Use the following command to connect to your EC2 instance:  
+   ```bash
+   ssh -i [PATH TO YOUR .PEM FILE] ec2-user@[YOUR PUBLIC IPV4 DNS]
+   ```
+   
