@@ -108,3 +108,4 @@ If Git is the tool for tracking changes, think of GitHub as a storage space for 
 Even though your code is on a cloud server like EC2, GitHub helps you use Git and see your file changes in a more user-friendly way. It's just like how using an IDE (VSCode) makes editing code easy.  
 
 GitHub is especially useful when you're working in teams and need to share your updates and reviews with others on a shared codebase.
+
