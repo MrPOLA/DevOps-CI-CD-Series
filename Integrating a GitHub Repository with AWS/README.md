@@ -34,24 +34,25 @@ At the end of this project, you'll have:
 - Set up Git and GitHub
 - Connected your web app project to a GitHub repo
 - Updated your web app files and pushed them to your GitHub repo
+
 ![You'll be setting up a repository for your source code!](https://learn.nextwork.org/projects/static/aws-devops-github/architecture-today.png)  
 <p align="center">You'll be setting up a repository for your source code!</p>  
 
 ---
 
-### 💂‍♀️ Step 1: **Set Up an IAM User**
+<p align="center">💂‍♀️ Step 1: Set Up an IAM User </p> 
 
 1. Log in to your AWS account with your IAM user.
 
 ---
 
-### 🧱 Step 2: **Set Up Your Web App in the Cloud** (Project 1 of this DevOps Series)
+<p align="center"> 🧱 Step 2: Set Up Your Web App in the Cloud (Project 1 of this DevOps Series) </p
 
 We recommend completing Project 1 of this DevOps series first before proceeding. If you've already completed it, head straight to Step #3: Install Git.
 
 ---
 
-### ⬇️ Step 3: **Install Git**
+<p align="center">⬇️ Step 3: Install Git</p>
 
 Now that your development environment is ready, let's install Git on your EC2 instance.
 
@@ -64,3 +65,20 @@ sudo dnf update -y
 
 # Install Git
 sudo dnf install git -y
+```
+
+![Install Git](https://learn.nextwork.org/projects/static/aws-devops-github/3.1.png)
+<p align="center">Install Git.</p>  
+
+3. Verifiy the installation:
+   
+```bash
+git --version
+```
+
+![Run a git version check](https://learn.nextwork.org/projects/static/aws-devops-github/3.2.png)
+<p align="center">Run a git version check.</p>  
+
+---
+
+<p align="center">🔌 Step #4</p>
