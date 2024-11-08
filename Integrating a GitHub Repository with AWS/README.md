@@ -82,3 +82,29 @@ git --version
 ---
 
 <p align="center">🔌 Step #4</p>
+
+Git is installed, woohoo! Next up, we'll set you up with GitHub.
+
+In this step, you're going to:
+
+1. **Set up a GitHub account** (if you don't have one).
+2. **Create a GitHub repository**.
+
+---
+
+If you already have a GitHub account:
+- Sign in to GitHub.
+- Scroll to the heading 🗂️ **Set up a new repository** below.
+
+If you don't have a GitHub account, no worries! Signing up is free and takes just 5 minutes.  
+Head to GitHub's [signup page](https://github.com/join).
+
+---
+
+💡 **What is the difference between Git & GitHub?**  
+If Git is the tool for tracking changes, think of GitHub as a storage space for different versions of your project that Git tracks. Since GitHub is a cloud service, it also lets you access your work from anywhere and collaborate with other developers over the internet.
+
+💡 **Why would I use GitHub? Isn’t the code in my EC2 instance already in the cloud?**  
+Even though your code is on a cloud server like EC2, GitHub helps you use Git and see your file changes in a more user-friendly way. It's just like how using an IDE (VSCode) makes editing code easy.  
+
+GitHub is especially useful when you're working in teams and need to share your updates and reviews with others on a shared codebase.
