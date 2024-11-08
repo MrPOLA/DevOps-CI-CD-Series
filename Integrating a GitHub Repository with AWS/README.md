@@ -25,8 +25,6 @@ Here's what you'll build at the end of ALL seven projects ⬇️
 ![Workflow](https://learn.nextwork.org/projects/static/aws-devops-vscode/architecture-complete.png "Workflow showing the CI/CD pipeline architecture involving AWS services")  
 <p align="center">Yup, you'll build all of this from scratch, and we'll do every step together.</p>  
 
-&nbsp;
-
 Welcome to Project 2 of your DevOps x AWS project series! In this project, you’ll learn how to store your web application's source code in a GitHub repository and integrate it with AWS.
 
 If you haven’t done Project 1 yet, we recommend completing it first. But no worries if you’re new to repositories; you’ll learn all the essentials in this project!
