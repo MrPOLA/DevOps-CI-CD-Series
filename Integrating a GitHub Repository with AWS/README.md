@@ -1,4 +1,4 @@
-# Project 2: Integrating a GitHub Repository with AWS
+# Integrating a GitHub Repository with AWS
 
 **Difficulty:** Easy-ish  
 **Time:** 60 min  
