@@ -34,6 +34,8 @@ At the end of this project, you'll have:
 - Set up Git and GitHub
 - Connected your web app project to a GitHub repo
 - Updated your web app files and pushed them to your GitHub repo
+![You'll be setting up a repository for your source code!](https://learn.nextwork.org/projects/static/aws-devops-github/architecture-today.png)  
+<p align="center">You'll be setting up a repository for your source code!</p>  
 
 ---
 
